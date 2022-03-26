@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: blue;
+    display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100vh;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    margin: 50pxs;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container.left_side{
+    position: relative;
+    background: #1699d6;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+}
+.profileText.imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.profileText.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.profileText h2{
+    color: rgb(10, 10, 10);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo{
+    padding-top: 40px;
+
+}
+.title{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position:relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: green;
+}
+.contactInfo ul li span{
+    color: rgb(20, 20, 20);
+    font-weight: 300;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+
+}
+.contactInfo.education h4{
+    color: green;
+    font-weight: 500;
+
+}
+.contactInfo.education h5{
+    color: black;
+    font-weight: 500;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100px;
+    height: 6px;
+    background: blue;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo .language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: red;
+}
+
+
+
+
+
+
+.container.right_side{
+    position: relative;
+    background: rgb(236, 222, 222);
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom:0;
+}
+.title2{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: black;
+}
+@media (max-width:100px){
+    .container{
+        margin: 10px;
+    }
+}
+.about{
+    margin-top: 250px;
+}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <div class="left_side">
+    <div class="profileText">
+        <div class="imgBX">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-4TK6VsoPBsMzOsetfUGx5ms3rvsOZbZBg&usqp=CAU">
+
+        </div>
+        <h2> Sadique Husain <br><span> Full Stack Web developer</span></h2>
+    
+    </div>
+    <div class="contactInfo">
+        <h3 class="title"> Contact Info</h3>
+        <ul>
+            <li>
+         <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+         <span class="text"> 9608344017</span>       
+            </li>
+            <li>
+                <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <span class="text">sadiquehusainphy580@gmail.com</span>       
+                   </li>
+                   <li>
+                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                    <span class="text">www.linkedin.com/sadique</span>       
+                       </li>
+                       <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Samastipur, Bihar, India</span>       
+                           </li>                  
+        </ul>
+       
+    </div>
+  <div class="contactInfo education">
+        <h3 class="title"> Education</h3>
+        <ul>
+            <li>
+        <h4>2012-2014</h4>
+        <h5>Intermediate in Science</h5>
+        <h6>RSB +2 School Samastipur</h6>      
+                           </li>
+           <li>
+        <h4>2014-2017</h4>
+        <h5>Bachelor of Science</h5>
+        <h6>Lalit Narayan Mithila University</h6>      
+                           </li>  
+                             <li>
+        <h4>2002-2012</h4>
+        <h5>Matriculation</h5>
+        <h6>KDHS Malinagar Pusa</h6>      
+                           </li>                
+
+        </ul>
+       
+    </div>
+     <div class="contactInfo language">
+        <h3 class="title">Languages</h3>
+        <ul>
+            <li>
+        <span class="text">English</span>
+<span class="percent">
+<div style="width: 90%;"></div>
+</span>
+     </li>
+     <li>
+        <span class="text">Hindi</span>
+        <span class="percent">
+            <div style="width: 100%;"></div>
+        </span>
+                
+     </li>
+      <li>
+        <span class="text">Urdu</span>
+        <span class="percent">
+            <div style="width: 60%;"></div>
+        </span>
+                
+     </li>
+
+     </ul>    
+     </div>       
+    </div>
+    <div class="right_side">
+<div class="about">
+    <h2 class="title2">Profile</h2>
+    <p> My name is sadique husain.i am from samastipur bihar currently i have been living here in Delhi since 5 years. i have done bachelor of sceince in physics form Lalit Narayan Mithila University.</p>
+
+    </div>
+<div class="about1">
+    <h2 class="title2">Experience</h2>
+    <p>Freshar</p>
+    </div>
+    <div class=" skills">
+        <h2 class="title3">SKILLS</h2>
+        
+        <ul>
+            <li>
+           HTML</li>
+           <li>JAVA</li>
+           <li>JAVA SCRIPT</li>
+           <li>MS OFFICE</li>
+           <li>SALES SKILLS</li>
+           <li>COMMUNICATION SKILL</li>
+            </div> 
+            <div class=" interest">
+        <h2 class="title2">INTERESTS</h2>
+        <ul>
+        <li>GAMING</li>
+        <li>READING</li>
+<li>PLAYING</li>
+<li>COOCKING</li>
+</ul>
+</div>
+
+
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
+
+<!-- Code inject
